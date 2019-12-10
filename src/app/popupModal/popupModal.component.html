@@ -6,16 +6,11 @@
                  placeholder="Text1 Description"
                  formControlName="description">
         </mat-form-field>
-        <mat-form-field>
-          <mat-select placeholder="Select category" formControlName="category">
-            <mat-option value="BEGINNER">Beginner</mat-option>
-            <mat-option value="INTERMEDIATE">Intermediate</mat-option>
-            <mat-option value="ADVANCED">Advanced</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-checkbox formControlName="yesNo"> I'm a checkbox</mat-checkbox>
-        </mat-form-field>
+        <mat-select placeholder="Select category" formControlName="category">
+          <mat-option value="1">Active</mat-option>
+          <mat-option value="0">Inactive</mat-option>
+        </mat-select>
+        <mat-checkbox formControlName="yesNo"> I'm a checkbox</mat-checkbox>
     </mat-dialog-content>
     <mat-dialog-actions>
       <button mat-raised-button type="submit" color="primary" class="Update-btn" (click)="save()">Save</button>

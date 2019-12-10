@@ -18,6 +18,7 @@ export class DemoComponent implements OnInit {
 
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
+    dialogConfig.width = '600px';
     dialogConfig.data = {
       id: 1,
       title: 'Angular For Beginners'
