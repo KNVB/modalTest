@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>{{title}}</h2>
+<div>
+    <mat-dialog-content [formGroup]="myForm">
+        <mat-form-field>
+          <input matInput
+                 placeholder="Text1 Description"
+                 formControlName="description">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Select category" formControlName="category">
+            <mat-option value="BEGINNER">Beginner</mat-option>
+            <mat-option value="INTERMEDIATE">Intermediate</mat-option>
+            <mat-option value="ADVANCED">Advanced</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-checkbox formControlName="yesNo"> I'm a checkbox</mat-checkbox>
+        </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-raised-button type="submit" color="primary" class="Update-btn" (click)="save()">Save</button>
+      <button mat-raised-button type="button" class="Discard-btn" (click)="closeDialog()">Close</button>
+    </mat-dialog-actions>
+</div>
